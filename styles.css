@@ -1,0 +1,100 @@
+/* Hide default scrollbar for a cleaner presentation feel */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Base Body Styling */
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+    color: white;
+    background-color: #0077be;
+    /* Using a fixed background-image combined with a background-color transition 
+       ensures the 'depth' feel is consistent across all sections. */
+    background-image: linear-gradient(180deg, 
+        rgba(0, 119, 190, 0) 0%, 
+        rgba(0, 26, 51, 0.5) 50%, 
+        rgba(0, 2, 5, 0.9) 100%
+    );
+    background-attachment: fixed;
+    background-size: cover;
+    transition: background-color 1.5s ease-in-out;
+}
+
+/* Custom Diver Gauge */
+#scroll-gauge {
+    position: fixed;
+    left: 40px;
+    top: 10%;
+    height: 80%;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.1);
+    z-index: 1000;
+}
+
+#diver-sprite {
+    position: absolute;
+    left: -24px; /* Centering the icon over the line */
+    width: 50px;
+    height: 50px;
+    background: transparent;
+    transition: top 0.1s linear;
+    display: flex;
+    align-items: center;
+}
+
+#diver-sprite img {
+    width: 100%;
+    height: auto;
+    filter: drop-shadow(0 0 10px rgba(0, 119, 190, 0.5));
+}
+
+#depth-text {
+    position: absolute;
+    left: 60px;
+    font-weight: bold;
+    color: #00d4ff;
+}
+
+/* Resume-Inspired Glass Cards */
+.logo { font-size: 4rem; letter-spacing: 10px; margin: 0; }
+
+#content-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 800px;
+    transition: transform 0.3s ease, background 0.8s ease, border-color 0.8s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Abyss Mode Styling */
+body.abyss-mode {
+    background-color: #000205; /* This darkens the whole page smoothly */
+}
+
+body.abyss-mode .card {
+    border-color: rgba(0, 212, 255, 0.2);
+    background: rgba(0, 0, 0, 0.4);
+}
+
+/* Layout Helpers */
+.loop-container { display: flex; justify-content: space-around; text-align: center; gap: 10px; }
+.loop-step { background: rgba(0,0,0,0.2); padding: 15px; border-radius: 10px; flex: 1; }
+.team-grid { display: flex; gap: 20px; justify-content: space-between; }
+.profile-pic { width: 80px; height: 80px; border-radius: 50%; object-fit: cover; }
+.roadmap-list { list-style: none; padding: 0; }
+.roadmap-list li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); }

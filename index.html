@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INK'D | Descend Into The Abyss</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="scroll-gauge">
+        <div id="gauge-line"></div>
+        <div id="diver-sprite">
+            <img src="diver_icon.png" alt="Diver">
+            <span id="depth-text">0m</span>
+        </div>
+    </div>
+
+    <main id="content-wrapper">
+        <section id="hero">
+            <div class="card header-card">
+                <h1 class="logo">INK'D</h1>
+                <p class="tagline">Equivalent Exchange in the Radioactive Deep</p>
+                <p>A casual mobile arcade-roguelite where the ocean mutates against you.</p>
+            </div>
+        </section>
+
+        <section id="concept">
+            <div class="card">
+                <h2>The Setting: Atomic Abyss</h2>
+                <p>An atomic bomb sits at the bottom of the ocean, leaking radioactive gas that mutates deep-sea wildlife. As a specialized diver, you must capture these threats before they reach the surface.</p>
+            </div>
+
+            <div class="card">
+                <h2>Core Game Loop</h2>
+                <div class="loop-container">
+                    <div class="loop-step"><strong>DESCEND</strong><br>Navigate mines & radiation</div>
+                    <div class="loop-step"><strong>CAPTURE</strong><br>Engage mutations for rewards</div>
+                    <div class="loop-step"><strong>UPGRADE</strong><br>Modify gear & oxygen </div>
+                    <div class="loop-step"><strong>REPEAT</strong><br>Dive deeper for boss fights</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vision">
+            <div class="card">
+                <h2>Technical & Art Direction</h2>
+                <p>Inspired by the simplicity of <em>Buckshot Roulette</em>, our systems prioritize high-impact mechanics and "silly, buoyant" submerged audio.</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li><strong>Modular Spawning:</strong> Biomes (Shallow, Midnight, Abyss) triggered by Y-coordinate.</li>
+                    <li><strong>Object Pooling:</strong> Recycles off-screen assets to prevent battery drain on mobile devices.</li>
+                    <li><strong>Mutation RNG:</strong> Procedural variation ensures no two dives are identical.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="team">
+            <div class="card">
+                <h2>The Development Team</h2>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h3>Chris Chung</h3>
+                        <p><strong>Tech Lead</strong></p>
+                    </div>
+                    <div class="team-member">
+                        <h3>Carrington Smith</h3>
+                        <p><strong>Design Lead</strong></p>
+                    </div>
+                    <div class="team-member">
+                        <h3>John Gronda</h3>
+                        <p><strong>Art Lead</strong></p>
+                    </div>
+                    <div class=""team-member>
+                        <h3>William Cazayoux</h3>
+                        <p><strong>Project Lead</strong></p>
+                    </div>
+                </div>
+                <hr style="border: 0.5px solid rgba(255,255,255,0.1); margin: 20px 0;">
+                <p><small>Future roles: Audio Engineers, Producers, and QA Testers.</small></p>
+            </div>
+        </section>
+
+        <section id="roadmap">
+            <div class="card">
+                <h2>Project Roadmap</h2>
+                <ul class="roadmap-list">
+                    <li><strong>Months 1-2:</strong> Core descent, touch catching, and first biome.</li>
+                    <li><strong>Month 3:</strong> Upgrade shop, Boss AI, and radiation logic.</li>
+                    <li><strong>Month 4:</strong> Narrative, tutorials, SFX, and Music.</li>
+                    <li><strong>Month 5:</strong> QA & optimization for low-end mobile devices.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
