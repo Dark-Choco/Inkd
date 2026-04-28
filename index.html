@@ -17,47 +17,12 @@
 
     <main id="content-wrapper">
         <section id="hero">
-            <div class="card header-card">
+            <div class="card header-card" style="text-align: center;">
+                <img src="hero_mockup.png" alt="INK'D Link and Mobile Gameplay" style="max-width: 100%; height: auto; border-radius: 12px; margin-bottom: 20px;">
+                
                 <h1 class="logo">INK'D</h1>
                 <p class="tagline">The deeper you hunt, the more the ocean mutates against you.</p>
                 <p>A casual mobile arcade-roguelite designed for simple, offline play in your spare time.</p>
-            </div>
-        </section>
-
-        <section id="concept">
-            <div class="card">
-                <h2>The Setting: Radioactive Deep</h2>
-                <p>An atomic bomb rests at the bottom of a deep ocean, leaking radioactive gas that causes abnormal wildlife mutations. Specialized divers are sent to neutralize these mutated threats before they reach the land.</p>
-            </div>
-
-            <div class="card">
-                <h2>Core Game Loop</h2>
-                <div class="loop-container">
-                    <div class="loop-step"><strong>DESCEND</strong><br>Navigate mines and radiation zones.</div>
-                    <div class="loop-step"><strong>ENGAGE</strong><br>Avoid poisonous ink and capture mutated squids.</div>
-                    <div class="loop-step"><strong>UPGRADE</strong><br>Spend earnings on oxygen, weapons, and mobility.</div>
-                    <div class="loop-step"><strong>REPEAT</strong><br>Dive deeper for rarer squids and boss rewards.</div>
-                </div>
-            </div>
-        </section>
-
-        <section id="technical">
-            <div class="card">
-                <h2>Technical Infrastructure & Feasibility</h2>
-                <p>As the technical foundation for our vertical descent arcade-roguelite, we have prioritized mobile performance and modular scalability.</p>
-                <ul style="list-style: none; padding: 0;">
-                    <li><strong>Modular Spawning System:</strong> Divides the ocean into depth biomes (Shallow, Midnight, Abyss) with Y-coordinate triggers for balanced distribution.</li>
-                    <li><strong>Performance Optimization:</strong> Uses Object Pooling to recycle off-screen assets, preventing battery drain and lag on older devices.</li>
-                    <li><strong>Mutation RNG:</strong> A unique procedural system ensures no two dives are identical, driving high replayability.</li>
-                </ul>
-            </div>
-        </section>
-
-        <section id="vision">
-            <div class="card">
-                <h2>Art Direction & UX</h2>
-                <p>Our visuals are inspired by popular minimalistic 2D game art, featuring 2D animated skeletons and modular equipment sets.</p>
-                <p><strong>Audio Experience:</strong> A buoyant, submerged atmosphere with "silly" sound bytes to keep the casual tone consistent.</p>
             </div>
         </section>
 
@@ -68,24 +33,69 @@
                     <div class="team-member">
                         <h3>William Cazayoux</h3>
                         <p><strong>Team Lead</strong></p>
-                        <p><small>Concept writing & team communications.</small></p>
+                        <p><small>Full completion of CAS 117; Specialist in game concept writing and team communications.</small></p>
                     </div>
                     <div class="team-member">
                         <h3>Chris Chung</h3>
                         <p><strong>Tech Lead</strong></p>
-                        <p><small>Infrastructure & technical specifications.</small></p>
+                        <p><small>Infrastructure lead with a focus on game development technology and performance.</small></p>
                     </div>
                     <div class="team-member">
                         <h3>Carrington Smith</h3>
                         <p><strong>Design Lead</strong></p>
-                        <p><small>Player experience & mechanics design.</small></p>
+                        <p><small>Expert in player experience and refining complex game mechanics and systems.</small></p>
                     </div>
                     <div class="team-member">
                         <h3>John Gronda</h3>
                         <p><strong>Art Lead</strong></p>
-                        <p><small>Graphic design & game art concepts.</small></p>
+                        <p><small>Background in fine arts and graphic design; Specialist in 2D game art and aesthetics.</small></p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section id="market">
+            <div class="card">
+                <h2>Market Analysis</h2>
+                <p>We compete with successful titles like <em>Alto’s Odyssey</em>, <em>Dead Cells</em>, and <em>Stardew Valley</em>. While these games are abundant, the turnover at the top creates space for new entries.</p>
+                <p><strong>Our Edge:</strong> INK'D stands out through its unique Mutation RNG system and a high-stakes "Risk vs. Reward" progression loop that keeps players hooked.</p>
+            </div>
+        </section>
+
+        <section id="concept">
+            <div class="card">
+                <h2>The Setting: Radioactive Deep</h2>
+                <p>An atomic bomb rests at the bottom of a deep ocean, leaking radioactive gas that causes abnormal wildlife mutations. Specialized divers are sent to neutralize these threats before they reach the land.</p>
+            </div>
+
+            <div class="card">
+                <h2>Core Game Loop</h2>
+                <div class="loop-container">
+                    <div class="loop-step"><strong>DESCEND</strong><br>Navigate hazards like mines and radiation zones.</div>
+                    <div class="loop-step"><strong>ENGAGE</strong><br>Avoid poisonous ink attacks and use tools to successfully capture threats.</div>
+                    <div class="loop-step"><strong>UPGRADE</strong><br>Spend earnings on oxygen capacity, weapons, and mobility.</div>
+                    <div class="loop-step"><strong>REPEAT</strong><br>Dive deeper for rarer mutations or attempt the final boss.</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="art-direction">
+            <div class="card">
+                <h2>Art Direction & UX</h2>
+                <p>Visuals are inspired by minimalistic 2D game art, featuring 2D animated skeletons and modular equipment sets designed for casual immersion.</p>
+                <p><strong>Audio Experience:</strong> A buoyant, "silly," and submerged atmosphere.</p>
+            </div>
+        </section>
+
+        <section id="technical">
+            <div class="card">
+                <h2>Technical Infrastructure</h2>
+                <p>Built for mobile and tuned for performance, our foundation ensures smooth gameplay through specific technical solutions:</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li><strong>Modular Spawning System:</strong> Divides the ocean into depth biomes with Y-coordinate algorithms for balanced distribution.</li>
+                    <li><strong>Object Pooling:</strong> Recycles assets off-screen to prevent battery drain and lag spikes.</li>
+                    <li><strong>Mutation RNG:</strong> A unique procedural system ensuring no two dives are identical.</li>
+                </ul>
             </div>
         </section>
 
@@ -94,13 +104,41 @@
                 <h2>Project Roadmap</h2>
                 <ul class="roadmap-list">
                     <li><strong>Months 1-2:</strong> Core descent loop, touch catching, and first biome spawner.</li>
-                    <li><strong>Month 3:</strong> Upgrade shop (Damage, Capacity, Range), Boss AI, and Radiation logic.</li>
-                    <li><strong>Month 4:</strong> Narrative polish, integrated tutorials, SFX, and Music.</li>
-                    <li><strong>Month 5:</strong> QA, bug fixes, and performance optimization for iOS/Android.</li>
+                    <li><strong>Month 3:</strong> Upgrade shop systems, Boss Squid AI, and Radiation logic.</li>
+                    <li><strong>Month 4:</strong> Narrative polish, story lines, integrated tutorials, and SFX/Music.</li>
+                    <li><strong>Month 5:</strong> QA, bug fixes, and performance testing for iOS and Android.</li>
                 </ul>
             </div>
         </section>
+
+        <section id="visuals">
+            <div class="visual-grid" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 20px;">
+                <div class="card visual-card" style="text-align: center;">
+                    <h3>Concept Art 1</h3>
+                    <img src="1.png" alt="Concept Art 1" style="max-width: 100%; border-radius: 8px;">
+                </div>
+                <div class="card visual-card" style="text-align: center;">
+                    <h3>Concept Art 2</h3>
+                    <img src="2.png" alt="Concept Art 2" style="max-width: 100%; border-radius: 8px;">
+                </div>
+                <div class="card visual-card" style="text-align: center;">
+                    <h3>Concept Art 3</h3>
+                    <img src="3.png" alt="Concept Art 3" style="max-width: 100%; border-radius: 8px;">
+                </div>
+            </div>
+            
+            <div class="card demo-card" style="text-align: center;">
+                <h2>Demo Video</h2>
+                <img src="demo.gif" alt="Game Demo Animation" style="max-width: 100%; border-radius: 8px; border: 2px solid #333;">
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="card" style="text-align: center; background: transparent; border: none; box-shadow: none;">
+            <p><small>© 2026 INK'D Development Team. Developed for the Team Game Pitch Project.</small></p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
