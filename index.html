@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INK'D | Descend Into The Abyss</title>
+    <title>INK'D | Dive Into The Mutation</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -19,63 +19,73 @@
         <section id="hero">
             <div class="card header-card">
                 <h1 class="logo">INK'D</h1>
-                <p class="tagline">Equivalent Exchange in the Radioactive Deep</p>
-                <p>A casual mobile arcade-roguelite where the ocean mutates against you.</p>
+                <p class="tagline">The deeper you hunt, the more the ocean mutates against you.</p>
+                <p>A casual mobile arcade-roguelite designed for simple, offline play in your spare time.</p>
             </div>
         </section>
 
         <section id="concept">
             <div class="card">
-                <h2>The Setting: Atomic Abyss</h2>
-                <p>An atomic bomb sits at the bottom of the ocean, leaking radioactive gas that mutates deep-sea wildlife. As a specialized diver, you must capture these threats before they reach the surface.</p>
+                <h2>The Setting: Radioactive Deep</h2>
+                <p>An atomic bomb rests at the bottom of a deep ocean, leaking radioactive gas that causes abnormal wildlife mutations. Specialized divers are sent to neutralize these mutated threats before they reach the land.</p>
             </div>
 
             <div class="card">
                 <h2>Core Game Loop</h2>
                 <div class="loop-container">
-                    <div class="loop-step"><strong>DESCEND</strong><br>Navigate mines & radiation</div>
-                    <div class="loop-step"><strong>CAPTURE</strong><br>Engage mutations for rewards</div>
-                    <div class="loop-step"><strong>UPGRADE</strong><br>Modify gear & oxygen </div>
-                    <div class="loop-step"><strong>REPEAT</strong><br>Dive deeper for boss fights</div>
+                    <div class="loop-step"><strong>DESCEND</strong><br>Navigate mines and radiation zones.</div>
+                    <div class="loop-step"><strong>ENGAGE</strong><br>Avoid poisonous ink and capture mutated squids.</div>
+                    <div class="loop-step"><strong>UPGRADE</strong><br>Spend earnings on oxygen, weapons, and mobility.</div>
+                    <div class="loop-step"><strong>REPEAT</strong><br>Dive deeper for rarer squids and boss rewards.</div>
                 </div>
+            </div>
+        </section>
+
+        <section id="technical">
+            <div class="card">
+                <h2>Technical Infrastructure & Feasibility</h2>
+                <p>As the technical foundation for our vertical descent arcade-roguelite, we have prioritized mobile performance and modular scalability.</p>
+                <ul style="list-style: none; padding: 0;">
+                    <li><strong>Modular Spawning System:</strong> Divides the ocean into depth biomes (Shallow, Midnight, Abyss) with Y-coordinate triggers for balanced distribution.</li>
+                    <li><strong>Performance Optimization:</strong> Uses Object Pooling to recycle off-screen assets, preventing battery drain and lag on older devices.</li>
+                    <li><strong>Mutation RNG:</strong> A unique procedural system ensures no two dives are identical, driving high replayability.</li>
+                </ul>
             </div>
         </section>
 
         <section id="vision">
             <div class="card">
-                <h2>Technical & Art Direction</h2>
-                <p>Inspired by the simplicity of <em>Buckshot Roulette</em>, our systems prioritize high-impact mechanics and "silly, buoyant" submerged audio.</p>
-                <ul style="list-style: none; padding: 0;">
-                    <li><strong>Modular Spawning:</strong> Biomes (Shallow, Midnight, Abyss) triggered by Y-coordinate.</li>
-                    <li><strong>Object Pooling:</strong> Recycles off-screen assets to prevent battery drain on mobile devices.</li>
-                    <li><strong>Mutation RNG:</strong> Procedural variation ensures no two dives are identical.</li>
-                </ul>
+                <h2>Art Direction & UX</h2>
+                <p>Our visuals are inspired by popular minimalistic 2D game art, featuring 2D animated skeletons and modular equipment sets.</p>
+                <p><strong>Audio Experience:</strong> A buoyant, submerged atmosphere with "silly" sound bytes to keep the casual tone consistent.</p>
             </div>
         </section>
 
         <section id="team">
             <div class="card">
-                <h2>The Development Team</h2>
+                <h2>The Team</h2>
                 <div class="team-grid">
+                    <div class="team-member">
+                        <h3>William Cazayoux</h3>
+                        <p><strong>Team Lead</strong></p>
+                        <p><small>Concept writing & team communications.</small></p>
+                    </div>
                     <div class="team-member">
                         <h3>Chris Chung</h3>
                         <p><strong>Tech Lead</strong></p>
+                        <p><small>Infrastructure & technical specifications.</small></p>
                     </div>
                     <div class="team-member">
                         <h3>Carrington Smith</h3>
                         <p><strong>Design Lead</strong></p>
+                        <p><small>Player experience & mechanics design.</small></p>
                     </div>
                     <div class="team-member">
                         <h3>John Gronda</h3>
                         <p><strong>Art Lead</strong></p>
-                    </div>
-                    <div class=""team-member>
-                        <h3>William Cazayoux</h3>
-                        <p><strong>Project Lead</strong></p>
+                        <p><small>Graphic design & game art concepts.</small></p>
                     </div>
                 </div>
-                <hr style="border: 0.5px solid rgba(255,255,255,0.1); margin: 20px 0;">
-                <p><small>Future roles: Audio Engineers, Producers, and QA Testers.</small></p>
             </div>
         </section>
 
@@ -83,10 +93,10 @@
             <div class="card">
                 <h2>Project Roadmap</h2>
                 <ul class="roadmap-list">
-                    <li><strong>Months 1-2:</strong> Core descent, touch catching, and first biome.</li>
-                    <li><strong>Month 3:</strong> Upgrade shop, Boss AI, and radiation logic.</li>
-                    <li><strong>Month 4:</strong> Narrative, tutorials, SFX, and Music.</li>
-                    <li><strong>Month 5:</strong> QA & optimization for low-end mobile devices.</li>
+                    <li><strong>Months 1-2:</strong> Core descent loop, touch catching, and first biome spawner.</li>
+                    <li><strong>Month 3:</strong> Upgrade shop (Damage, Capacity, Range), Boss AI, and Radiation logic.</li>
+                    <li><strong>Month 4:</strong> Narrative polish, integrated tutorials, SFX, and Music.</li>
+                    <li><strong>Month 5:</strong> QA, bug fixes, and performance optimization for iOS/Android.</li>
                 </ul>
             </div>
         </section>
