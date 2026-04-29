@@ -74,11 +74,18 @@ body {
     margin: 20px auto;
     max-width: 800px;
     transition: transform 0.3s ease, background 0.8s ease, border-color 0.8s ease;
+    position: relative;
 }
 
 .card:hover {
     transform: translateY(-5px);
     background: rgba(255, 255, 255, 0.08);
+}
+
+/* Hover effect to scale up Concept Art and Demo cards */
+.visual-card:hover, .demo-card:hover {
+    transform: translateY(-30px) scale(1.5);
+    z-index: 100;
 }
 
 /* Abyss Mode Styling */
